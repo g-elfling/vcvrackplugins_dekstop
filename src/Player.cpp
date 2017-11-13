@@ -195,6 +195,7 @@ void Player<ChannelCount>::playerRun() {
 		wavLoaded = true;
 		counter = 0; // start playing from the beginning???
 		playing = true;
+		hasLooped = false;
 	}
 }
 
