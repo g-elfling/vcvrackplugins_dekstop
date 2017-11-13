@@ -37,3 +37,20 @@ struct Recorder8Widget : RecorderWidget<8u>
 {
 	Recorder8Widget();
 };
+
+template <unsigned int ChannelCount>
+struct PlayerWidget : ModuleWidget {
+	PlayerWidget();
+	json_t *toJsonData();
+	void fromJsonData(json_t *root);
+};
+
+struct Player2Widget : PlayerWidget<2u>
+{
+	Player2Widget();
+};
+
+struct Player8Widget : PlayerWidget<8u>
+{
+	Player8Widget();
+};

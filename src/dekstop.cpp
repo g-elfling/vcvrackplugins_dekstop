@@ -13,4 +13,6 @@ void init(rack::Plugin *p) {
 	p->addModel(createModel<GateSEQ8Widget>("dekstop", "dekstop", "GateSEQ8", "Gate SEQ-8"));
 	p->addModel(createModel<Recorder2Widget>("dekstop", "dekstop", "Recorder2", "Recorder 2"));
 	p->addModel(createModel<Recorder8Widget>("dekstop", "dekstop", "Recorder8", "Recorder 8"));
+	p->addModel(createModel<Player2Widget>("dekstop", "dekstop", "Player2", "Player 2"));
+	p->addModel(createModel<Player8Widget>("dekstop", "dekstop", "Player8", "Player 8"));
 }
